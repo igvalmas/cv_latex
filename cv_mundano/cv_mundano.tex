@@ -1,20 +1,16 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 \usepackage{lmodern}
-
 \moderncvstyle{classic} 
 \moderncvcolor{blue} 
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel} 
 \usepackage{geometry}
-\usepackage{bookmark}
-
 \geometry{left=1.5cm, top=1.2cm, right=1.5cm, bottom=1.2cm}
 
-% --- INFORMACIÓN PERSONAL ---
 \firstname{Ignacio}
 \familyname{Valmaseda}
-\title{Especialista en Análisis Financiero y Rentabilidad}
+\title{Especialista en Modelización Financiera y Capital}
 \address{San Bartolomé, Las Palmas}{España}
 \mobile{(+34) 664 645 676}
 \email{ignacio.0032@gmail.com}
@@ -24,27 +20,26 @@
 \makecvtitle
 
 \section{Resumen Profesional}
-\cvitem{}{Físico especializado en el sector bancario y análisis de rentabilidad real (\textbf{RORAC}). Experto en modelizar el impacto de garantías y cuadros de amortización en la cuenta de resultados. Especialista en optimizar el \textbf{consumo de capital} y automatizar herramientas financieras.}
-
-\section{Habilidades Clave}
-\cvitem{Finanzas}{Rentabilidad \textbf{RORAC/RORWA}, operaciones de activo y pasivo, gestión de colaterales y garantías financieras/hipotecarias.}
-\cvitem{Análisis}{Modelización de cuadros de amortización, coste de financiación (FTP) y seguimiento de métricas de capital (RWA).}
-\cvitem{Tecnología}{Experto en \textbf{R / Shiny}, SQL y Excel/VBA avanzado para simulaciones financieras.}
-\cvitem{Regulación}{Normativa bancaria europea (Basilea III/CRR) y su impacto en solvencia.}
+\cvitem{}{Físico especializado en riesgos cuantitativos y rentabilidad bancaria. Experiencia sólida en el soporte metodológico de métricas RORAC y capital, optimización de procesos de calibración y análisis técnico de operaciones financieras complejas en entornos globales.}
 
 \section{Experiencia Profesional}
 
-\cventry{2025--Actualidad}{Especialista en Análisis de Riesgos y Rentabilidad}{Santander Analytics}{Madrid / Remoto}{}{
-Responsable técnico del cálculo de métricas de rentabilidad de la cartera.\\[0.5em]
-{\small$\bullet$} \textbf{Análisis de Operaciones:} Supervisión del \textbf{RORAC y RORWA}, asegurando la rentabilidad y eficiencia del capital.\\
-{\small$\bullet$} \textbf{Optimización de Capital:} Modelización de RWA y análisis del impacto de las \textbf{garantías}.\\
-{\small$\bullet$} \textbf{Soporte Metodológico:} Asesoramiento en estructuras complejas y cuadros de amortización.\\
-{\small$\bullet$} \textbf{Riesgo de Pensiones:} Desarrollo del modelo de valoración y seguimiento del riesgo.}
+\cventry{2025--Actualidad}{Especialista en Rentabilidad y Capital}{Santander Analytics}{Madrid / Remoto}{}{
+Soporte técnico y metodológico principal para la calculadora de rentabilidad y el seguimiento de métricas de capital.\\[0.5em]
+{\small$\bullet$} \textbf{Metodología de Rentabilidad:} Soporte en la definición y mantenimiento del motor de cálculo para diversos activos: \textit{Project Finance}, Corporativas, IFIs, Titulizaciones e Hipotecarias. Gestión de la documentación y parámetros de cálculo.\\[0.3em]
+{\small$\bullet$} \textbf{Optimización de Procesos:} Mejora del proceso de calibración de la fórmula de replicación de capital, reduciendo los tiempos de ejecución para las 20 unidades del banco de un mes a menos de un día.\\[0.3em]
+{\small$\bullet$} \textbf{Análisis de Capital:} Apoyo técnico en el modelo interno de capital (confianza 99.95\%). Ejecución de cálculos de correlación, diversificación y simulaciones de Monte Carlo, incluyendo la calibración de parámetros mediante optimización.\\[0.3em]
+{\small$\bullet$} \textbf{Soporte a Unidades:} Colaboración directa con las áreas de Capital, Riesgos de Pensiones y equipos comerciales internacionales para resolver dudas metodológicas y mejorar la fluidez en la comunicación de cambios.}
 
 \cventry{2018--2025}{Analista de Riesgos Cuantitativos}{Santander Analytics}{Madrid}{}{
-{\small$\bullet$} \textbf{Automatización:} Desarrollo de aplicaciones en R/Shiny para visualización de rentabilidad en tiempo real.\\
-{\small$\bullet$} \textbf{Modelado Financiero:} Réplicas de modelos para validar el capital regulatorio.\\
-{\small$\bullet$} \textbf{Proyecciones:} Análisis de escenarios para prever el impacto de tipos de interés.}
+{\small$\bullet$} \textbf{Riesgo de Pensiones:} Análisis detallado del modelo de valoración de activos (bonos, swaps) y escenarios VaR. Ejecución del backtesting del modelo, optimizando los tiempos de revisión y reporte.\\[0.3em]
+{\small$\bullet$} \textbf{Herramientas Técnicas:} Desarrollo de aplicaciones en R/Shiny para la monitorización de riesgos y gestión de FAQs automáticas para soporte de usuarios.\\[0.3em]
+{\small$\bullet$} \textbf{Interpretación Técnica:} Análisis de resultados de simulaciones estocásticas y apoyo en la elaboración de informes para comités de riesgos.}
+
+\section{Habilidades Técnicas}
+\cvitem{Finanzas}{Capital Regulatorio (Basel III/CRR), RORAC/RORWA, Estructuración de Operaciones, VaR.}
+\cvitem{Análisis}{Simulación de Monte Carlo, Optimización Numérica, Backtesting, Valoración de Activos.}
+\cvitem{Software}{R (Shiny), SQL, Excel/VBA avanzado, Python (conocimiento funcional).}
 
 \section{Formación Académica}
 \cventry{2017--2018}{Máster en Banca y Finanzas}{Centro de Estudios Garrigues}{}{}{}
@@ -52,7 +47,6 @@ Responsable técnico del cálculo de métricas de rentabilidad de la cartera.\\[
 \cventry{2010--2016}{Grado en Física}{UCM}{}{}{}
 
 \section{Idiomas}
-\cvitem{Español}{Nativo.}
-\cvitem{Inglés}{Nivel C1 (Avanzado) - Certificación BEC Higher.}
+\cvitem{Español}{Nativo. \hspace{1em} \textbf{Inglés}: Nivel C1 (Certificación BEC Higher).}
 
 \end{document}
