@@ -1,121 +1,68 @@
-\documentclass[a4paper,11pt]{article}
-\usepackage{latexsym}
-\usepackage{xcolor}
-\usepackage{float}
-\usepackage{ragged2e}
-\usepackage[empty]{fullpage}
-\usepackage{tabularx}
-\usepackage{titlesec}
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage{lmodern}
+% Estilo de la plantilla
+\moderncvstyle{classic} 
+\moderncvcolor{blue} 
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 \usepackage{geometry}
-\usepackage{marvosym}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage[T1]{fontenc}
-\usepackage[most]{tcolorbox}
 
-% --- Configuración de Márgenes ---
-\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+% Ajuste de márgenes para que todo quepa en una página si es posible
+\geometry{left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm}
 
-% --- Estilo de Secciones ---
-\tcbset{
-	frame code={}, center title, left=0pt, right=0pt, top=0pt, bottom=0pt,
-	colback=gray!15, colframe=white, width=\dimexpr\textwidth\relax,
-	enlarge left by=-2mm, boxsep=4pt, arc=0pt, outer arc=0pt,
-}
+% --- INFORMACIÓN PERSONAL ---
+\firstname{Ignacio}
+\familyname{Valmaseda}
+\title{Analytics Specialist} % Actualizado según tu comentario
+\address{Franchy Roca 9}{35500, Arrecife}{Spain} % [cite: 63]
+\mobile{(+34) 664-645-676} % [cite: 64]
+\email{ignacio.0032@gmail.com} % [cite: 64]
+\social[linkedin]{ignaciovalmaseda}
 
-\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
-
-% --- Comandos Personalizados ---
-\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \small #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProject}[3]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \small #2 \\
-      \textit{\small#3} & \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=3ex]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-% -------------------------------------------
-% DATOS DEL CV
-% -------------------------------------------
-\newcommand{\name}{Tu Nombre}
-\newcommand{\phone}{+34 600 000 000}
-\newcommand{\email}{tuemail@gmail.com}
-\newcommand{\linkedin}{linkedin.com/in/tu-usuario}
-\newcommand{\github}{github.com/tu-usuario}
+%----------------------------------------------------------------------------------
+%            CONTENIDO
+%----------------------------------------------------------------------------------
 
 \begin{document}
+\makecvtitle
 
-% ---------- ENCABEZADO ----------
-\begin{center}
-    {\Huge \textbf{\name}} \\ \vspace{8pt}
-    \small
-    \faPhone\ \phone \quad 
-    \href{mailto:\email}{\faEnvelope\ \email} \quad 
-    \href{https://\linkedin}{\faLinkedin\ LinkedIn} \quad 
-    \href{https://\github}{\faGithub\ GitHub}
-\end{center}
+\section{Professional Summary}
+\cvitem{}{Insightful data scientist with 4+ years of experience[cite: 66]. Skilled in data analysis, data modelling and data visualization[cite: 66]. Seeking to improve by learning cutting edge technologies to make a greater job every day[cite: 67].}
 
-% ----------- EDUCACIÓN -----------
-\section{Educación}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Universidad Ejemplo}{Ciudad, País}
-      {Grado en Ingeniería Informática}{2018 -- 2022}
-  \resumeSubHeadingListEnd
+\section{Work Experience}
 
-% ----------- EXPERIENCIA -----------
-\section{Experiencia}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Nombre de la Empresa}{Ciudad}
-      {Software Engineer}{Mes Año -- Actualidad}
-      \resumeItemListStart
-        \resumeItem{Desarrollo de microservicios utilizando Node.js y Docker.}
-        \resumeItem{Optimización de consultas SQL que redujeron el tiempo de respuesta en un 30\%.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+% NUEVO PUESTO (SPECIALIST)
+\cventry{2024--Present}{Analytics Specialist}{Santander Analytics, Santander Bank}{Madrid}{Full-time}{
+Promoted to Specialist to lead technical initiatives within the methodology department.
+\begin{itemize}
+    \item Oversight of capital and counterparty risk methodology frameworks.
+    \item Strategic data analysis to support decision-making and regulatory compliance.
+\end{itemize}}
 
-% ----------- PROYECTOS -----------
-\section{Proyectos}
-  \resumeSubHeadingListStart
-    \resumeProject
-      {Sistema de Gestión de Inventario}{Python, Django, PostgreSQL}{GitHub Link}
-      \resumeItemListStart
-        \resumeItem{Diseñé una interfaz responsiva y un sistema de autenticación seguro.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\cventry{2018--2024}{Analytics Analyst I}{Santander Analytics, Santander Bank}{Madrid}{Full-time}{ % [cite: 69, 70]
+Analysis data and creating models at capital and counterparty risk methodology department[cite: 72].
+\begin{itemize}
+    \item Created models to measure profitability and manage risks fitting economic and regulatory requirements[cite: 74, 75].
+    \item Used tools to create applications to help visualize complex data (R/Shiny)[cite: 77, 105].
+    \item Developed models for results, predictions, and extrapolations[cite: 78].
+    \item Conveyed technical concepts to business areas and resolved doubts[cite: 78].
+\end{itemize}}
 
-% ----------- SKILLS -----------
-\section{Habilidades Técnicas}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Lenguajes}{: Python, Java, JavaScript, C++, SQL, LaTeX} \\
-     \textbf{Tecnologías}{: React, Node.js, Docker, AWS, Git}
-    }}
- \end{itemize}
+\cventry{Jun--Oct 2018}{Trainee of Capital and Counterparty Risk}{Santander Analytics, Santander Bank}{Madrid}{Full-time}{ % [cite: 79, 80, 81]
+\begin{itemize}
+    \item Analyzed and represented complex data and improved features for existing models[cite: 83].
+    \item Drafted technical model documentation and transmitted technical concepts[cite: 84].
+\end{itemize}}
+
+\section{Education}
+\cventry{2017--2018}{MSc. Master's Degree in Finance and Banking}{Garrigues Study Center}{}{}{Financial markets, corporate banking, and european regulations[cite: 86, 87, 88, 89].}
+\cventry{2016--2017}{MSc. Master's Degree in Biostatistics}{Complutense University of Madrid}{}{}{Probability, mixed models and bayesian statistics[cite: 90, 91, 92, 93].}
+\cventry{2010--2016}{BSc. Degree in Physics}{Complutense University of Madrid}{}{}{Meteorology and atmospheric physics specialization[cite: 94, 95, 96, 97].}
+
+\section{Skills}
+\cvitem{Languages}{Spanish (Mother tongue), English (Fluent: C1 Advanced, BEC Higher)[cite: 100, 101, 102, 103].}
+\cvitem{Software}{R \& SHINY (Expert), Excel \& VBA (High), LaTeX (Medium), SQL (Medium)[cite: 105, 106, 108, 109].}
+\cvitem{Other}{Python \& C++ (Entry level), Thomson Reuters Eikon certification[cite: 110, 111, 112].}
 
 \end{document}
