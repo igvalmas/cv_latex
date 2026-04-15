@@ -1,0 +1,125 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{bookmark} 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{helvet} 
+
+% Color Azul Petróleo Profesional
+\definecolor{SlateBlue}{RGB}{30, 55, 85} 
+
+% Ajuste de márgenes
+\geometry{left=1.2cm, top=1cm, right=1.2cm, bottom=1cm}
+
+% Formato de Secciones
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large\bfseries\color{SlateBlue}
+}{}{0em}{}[\color{SlateBlue}\titlerule \vspace{-4pt}]
+
+% Comandos personalizados
+\newcommand{\resumeSubheading}[4]{
+\vspace{1.5mm}\item 
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\small #4} \\ 
+        \textit{\small #3} &  \small #2\\
+    \end{tabular*}
+    \vspace{-1.5mm}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=3.5ex, labelsep=1.2mm, itemsep=0.3mm]\small}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1mm}}
+
+\begin{document}
+\fontfamily{phv}\selectfont 
+
+%----------ENCABEZADO-----------------
+\begin{center}
+    {\Huge \textbf{\color{SlateBlue} Ignacio Valmaseda}} \\ \vspace{3mm}
+    \small 
+    \faPhone\ (+34) 664 645 676 \hspace{0.3cm} {\color{SlateBlue}$|$} \hspace{0.3cm} 
+    \faEnvelope\ \href{mailto:ignacio.valmaseda@protonmail.com}{ignacio.valmaseda@protonmail.com} \hspace{0.3cm} {\color{SlateBlue}$|$} \hspace{0.3cm} 
+    \faMapMarker\ Las Palmas / Madrid
+\end{center}
+
+\vspace{-4mm}
+
+\section{Perfil Profesional}
+\vspace{1mm}
+\small{Especialista en el diseño metodológico de operaciones financieras, definiendo los estándares de cálculo de rentabilidades, garantías y parámetros de producto. Experto en modelización compleja para la gestión de capital y valoración de activos mediante simulaciones y contraste de modelos. Perfil con gran capacidad analítica, enfocado en la precisión técnica, el desarrollo de informes de control y la documentación metodológica detallada.}
+
+%-----------EXPERIENCIA-----------------
+\section{Experiencia Profesional}
+  \begin{itemize}[leftmargin=*,labelsep=0mm]
+    \resumeSubheading
+      {Banco Santander}{Madrid}
+      {Especialista de Riesgos}{2025 -- Actualidad}
+      \resumeItemListStart
+        \item \textbf{Diseño Metodológico y Soporte Experto:} Definición matemática de los algoritmos de cálculo (rentabilidad, garantías, amortización) y resolución de consultas complejas sobre los motores de cálculo. Referente para el desarrollo de mejoras metodológicas y la interpretación técnica de resultados en la operativa del banco.
+        \item \textbf{Valoración y Herramientas Cuantitativas:} Dominio de herramientas de valoración avanzada, modelos de VaR y matrices de correlación de activos; capacidades críticas para la gestión y calibración de modelos de Capital y Pensiones mediante simulaciones de Monte Carlo.
+        \item \textbf{Optimización de Algoritmos:} Rediseño y simplificación de ecuaciones de calibración y procesos de cálculo, logrando optimizar la eficiencia técnica y reducir tiempos de ejecución de varias semanas a 24-48 horas.
+        \item \textbf{Documentación Técnica y Regulación:} Especialista en la elaboración de documentación técnica y matemática de modelos, informes de \textit{backtesting} y análisis \textit{ad-hoc}. Aseguro la convergencia entre los modelos desarrollados y el marco regulatorio vigente mediante revisiones y actualizaciones recurrentes.
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Banco Santander}{Madrid}
+      {Analista de Riesgos}{2018 -- 2025}
+      \resumeItemListStart
+       \item \textbf{Soporte Metodológico y Aprendizaje Operativo:} Soporte técnico en la definición de algoritmos de cálculo, adquiriendo el conocimiento experto en la estructuración y lógica financiera de las operaciones del banco.
+       \item \textbf{Optimización y Eficiencia:} Especialista en el rediseño de procesos y mejora de algoritmos de cálculo, centrando los esfuerzos en la automatización y reducción de tiempos de ejecución de herramientas críticas.
+       \item \textbf{Análisis Regulatorio y Documentación:} Ejecución de tareas de documentación técnica y matemática de modelos, con un fuerte enfoque en la lectura, comprensión y aplicación de la regulación bancaria vigente.
+       \item \textbf{Desarrollo Cuantitativo y Herramientas:} Creación de aplicaciones en \textbf{R/Shiny} para la monitorización de KPIs y soporte en la implementación de herramientas de análisis cuantitativo aplicadas al Capital.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Banco Santander}{Madrid}
+      {Becario en Análisis Cuantitativo}{Jun. 2018 -- Oct. 2018}
+      \resumeItemListStart
+       \item \textbf{Aprendizaje de Procesos:} Formación inicial en el funcionamiento de los motores de cálculo, la lógica de riesgos y la estructura de bases de datos del banco.
+       \item \textbf{Soporte Técnico:} Colaboración en la validación de herramientas internas y en la automatización de reportes de seguimiento y carga de datos.
+       \item \textbf{Finalización de Beca:} Incorporación a la plantilla fija del departamento tras cuatro meses de beca.
+      \resumeItemListEnd
+  \end{itemize}
+
+%-----------EDUCACIÓN-----------
+\section{Formación Académica}
+  \begin{itemize}[leftmargin=*,labelsep=0mm]
+    \resumeSubheading
+      {Universidad de Nebrija / Centro de Estudios Garrigues}{Madrid}
+      {Máster en Banca y Mercados Financieros}{2017 -- 2018}
+      \item[] \hspace{3.5ex} \small{Banca de Inversión, valoración de activos, derivados, gestión de carteras y análisis de riesgos.}
+
+    \resumeSubheading
+      {Universidad Complutense de Madrid}{Madrid}
+      {Máster en Bioestadística}{2016 -- 2017}
+      \item[] \hspace{3.5ex} \small{Modelización estadística avanzada, procesos estocásticos, análisis multivariante y programación en R.}
+
+    \resumeSubheading
+      {Universidad Complutense de Madrid}{Madrid}
+      {Grado en Física}{2010 -- 2016}
+      \item[] \hspace{3.5ex} \small{Especialidad en Física Aplicada (Geofísica y Meteorología): análisis de sistemas complejos y modelos físico-matemáticos.}
+  \end{itemize}
+
+%-----------SKILLS-----------------
+\section{Habilidades Técnicas}
+  \begin{itemize}[leftmargin=*,labelsep=0mm]
+    \item[] \hspace{3.5ex} \textbf{Definición Metodológica:} \small{Diseño y definición de lógica de operaciones, estándares de cálculo de rentabilidad, estructuras de amortización y parámetros técnicos de producto.}
+    
+    \vspace{1mm}
+    \item[] \hspace{3.5ex} \textbf{Modelización y Análisis:} \small{Modelización matemática compleja, simulación de Monte Carlo, procesos estocásticos y validación de modelos (\textit{backtesting}).}
+    
+    \vspace{1mm}
+    \item[] \hspace{3.5ex} \textbf{Software y Programación:} \small{R, Shiny, SQL, Excel/VBA avanzado y Python.}
+    
+    \vspace{1mm}
+    \item[] \hspace{3.5ex} \textbf{Idiomas:} \small{Español (Nativo), Inglés (C1 - Certificación Cambridge BEC Higher).}
+  \end{itemize}
+
+\end{document}
